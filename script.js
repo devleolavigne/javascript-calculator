@@ -25,8 +25,3 @@ function cleanAll() {
   document.getElementById('history').innerHTML = ''
   history = []
 }
-function equal() {
-  let currentNumber = document.getElementById('visor').innerHTML
-  let result = document.getElementById('history').innerHTML + currentNumber
-  result.map()
-}
