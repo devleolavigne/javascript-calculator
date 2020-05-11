@@ -25,3 +25,12 @@ function cleanAll() {
   document.getElementById('history').innerHTML = ''
   history = []
 }
+function equal() {
+  let currentNumber = document.getElementById('visor').innerHTML
+  if (currentNumber.length === 0) { return }
+  history.push(Number(currentNumber))
+  document.getElementById('history').innerHTML += `${document.getElementById('visor').innerHTML} `
+  document.getElementById('visor').innerHTML = ''
+  let equal = eval(history.join(''))
+  document.getElementById('visor').innerHTML = equal
+}
