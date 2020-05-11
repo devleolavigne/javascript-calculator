@@ -7,7 +7,7 @@ function addNum(param) {
   }
 }
 
-function calcAction(action) {
+function addAction(action) {
   let currentChar = document.getElementById('visor').innerHTML
   if (currentChar.length === 0) { return }
   history.push(Number(document.getElementById('visor').innerHTML))
@@ -16,7 +16,7 @@ function calcAction(action) {
   history.push(action)
 }
 
-function CleanCurrentEntry() {
+function cleanCurrentEntry() {
   document.getElementById('visor').innerHTML = ''
 }
 
