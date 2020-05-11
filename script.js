@@ -25,3 +25,9 @@ function cleanAll() {
   document.getElementById('history').innerHTML = ''
   history = []
 }
+function equal() {
+  let currentNumber = document.getElementById('visor').innerHTML
+  history.push(Number(currentNumber))
+  let equal = eval(history.join(''))
+  document.getElementById('visor').innerHTML = equal
+}
